@@ -13,16 +13,17 @@ The second important thing I did was to colour-code the outcomes through conditi
 1. **_Pivot Tables & Pivot Charts_**
   - Pivot tables were a great way to begin analysing the data which we had at hand. Clearly through the parent category and sub category pivot tables I was able to understand that plays in general have a higher tendency to be successful. However this was just the beginning and it gave me a peek into what is at stake.
 2. **_Descriptive Statistics_**
-  - Using descriptive statistics I was able to understand that the high fail rate is predominantly because campaigns having a higher goal than the successful campaigns in the U.S.
- ![Descriptive Statistics of US campaigns](Descriptive Stats.png)
+  - Using descriptive statistics I was able to understand that the high fail rate is predominantly because campaigns having a higher goal than the successful campaigns in the U.S.  
+ 
+ ![Descriptive Statistics of US campaigns](Descriptive%20Stats.png)
 
 ### Analysis of Outcomes Based on Launch Date
 
 1. For this analysis, the first taks was to use the ***YEAR()*** function to extract only the year from the campaign launch date field. As mentioned earlier, the campiagn launch date was converted from UNICODE to readable dates using the formula **_(((J2/60)/60)/24)+DATE(1970,1,1)_**.
 2. The next step was to create a pivot table with all the values and add the newly created Year column and the parent category fields as filters
 3. The Launch date was set as rows and the outcomes were set as columns, the count of outcomes were set as values in the value field settings
-4. The Columns were then filtered to exclude "Live" campaigns for this analysis
-5. !(Theater_Outcomes_vs_launch.png)
+4. The Columns were then filtered to exclude "Live" campaigns for this analysis  
+![Theater Outcomes vs Launch Date](Theater_Outcomes_vs_launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
