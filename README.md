@@ -14,7 +14,7 @@ The second important thing I did was to colour-code the outcomes through conditi
   - Pivot tables were a great way to begin analysing the data which we had at hand. Clearly through the parent category and sub category pivot tables I was able to understand that plays in general have a higher tendency to be successful. However this was just the beginning and it gave me a peek into what is at stake.
 2. **_Descriptive Statistics_**
   - Using descriptive statistics I was able to understand that the high fail rate is predominantly because campaigns having a higher goal than the successful campaigns in the U.S.
-  - /Descriptive Stats.png
+  ![Descriptive Statistics of U.S Kickstarter Campaigns]Descriptive Stats.png
   - 
 
 
