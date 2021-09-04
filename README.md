@@ -14,7 +14,7 @@ The second important thing I did was to colour-code the outcomes through conditi
   - Pivot tables were a great way to begin analysing the data which we had at hand. Clearly through the parent category and sub category pivot tables I was able to understand that plays in general have a higher tendency to be successful. However this was just the beginning and it gave me a peek into what is at stake.
 2. **_Descriptive Statistics_**
   - Using descriptive statistics I was able to understand that the high fail rate is predominantly because campaigns having a higher goal than the successful campaigns in the U.S.
- !(./Descriptive Stats.png)
+ ![Descriptive Statistics of US campaigns](Descriptive Stats.png)
 
 ### Analysis of Outcomes Based on Launch Date
 
@@ -22,7 +22,12 @@ The second important thing I did was to colour-code the outcomes through conditi
 2. The next step was to create a pivot table with all the values and add the newly created Year column and the parent category fields as filters
 3. The Launch date was set as rows and the outcomes were set as columns, the count of outcomes were set as values in the value field settings
 4. The Columns were then filtered to exclude "Live" campaigns for this analysis
-5. 
+5. !(Theater_Outcomes_vs_launch.png)
+
+### Analysis of Outcomes Based on Goals
+
+1. Here the first task was to create the goal buckets and the columns. This was a simple copy/paste and typing exercise to get the right columns and rows
+2. The next step was to use Countifs() function to extract the relevant information to populate the table. 
 
 
 
