@@ -24,11 +24,36 @@ The second important thing I did was to colour-code the outcomes through conditi
 3. The Launch date was set as rows and the outcomes were set as columns, the count of outcomes were set as values in the value field settings
 4. The Columns were then filtered to exclude "Live" campaigns for this analysis  
 ![Theater Outcomes vs Launch Date](Theater_Outcomes_vs_launch.png)
-
+5. As we can see in the above graph, Launch date plays an important role in predicting success of campaigns. Campaigns launched in May tend to have a high chance of success
 ### Analysis of Outcomes Based on Goals
 
 1. Here the first task was to create the goal buckets and the columns. This was a simple copy/paste and typing exercise to get the right columns and rows
-2. The next step was to use Countifs() function to extract the relevant information to populate the table. 
+2. The next step was to use Countifs() function to extract the relevant information to populate the table. The conditions were based on goals, subcategory="Plays", and Outcomes
+3. This table was further used to visualise and create the graphs
+![Outcomes based on Goals](Outcomes_vs_Goals.png)
+
+### Challenges and Difficulties Encountered
+
+While overall the exercise was easy, the new things which i learned were the conversion from **Unicode to Calendar date**. The presence of various outliers in the dataset, which skewed the results were another challenge and using descriptive statistics was helpful in uncovering this skew.
+
+## Results
+
+**What are two conclusions you can draw about the Outcomes based on Launch Date?**  
+1. May and June are the best months to launch a theater fundraising campaign with 67% and 65% success rates respectively
+2. December is the worst month to launch a theater fundraising campaign with only 48% success rate
+![Successful theatre campaigns as a percentage of total campaigns in any given month](Theatre_Successful_as_percent.png)
+
+**What can you conclude about the Outcomes based on Goals?**
+1. Majority of plays have a fundraising goal of 1,000 to 4,999. Falling within this goal range will also give us a higher likelihood of success as over 72% of campaigns are successful (_second only to <1000 goals_)
+2. The goal range 15,000 to 19,999 is the inflection point of the graph (_35,000 to 44,999 has too few data points and hence look like outliers_). Campaigns which have goals below 15,000 have a higher probability of success and campaigns with goals above 19,999 have a higher probability of failure.
+
+**What are some limitations of this dataset?**
+The data points are old. It shows data from 2009 to 2017. More recent data could have had a different trend. The other important limitation of the dataset was the lack of cateogry specific data. While overall the dataset had 4114 campaigns across categories, for the specific plays sub-category there were just 1066 campaigns, furhtermore only 314 plays in the U.K. which is not as robust a dataset to conduct the analysis on. 
+
+**What are some other possible tables and/or graphs that we could create?**
+1. Box and whisker plot specific to plays to understand the median and IQR and the outliers in the data
+2. UK Plays based on Goals and Launch Date to understand and predict more accurately. This however will yield only 314 data points and we must exercise caution in going through this route.
+
 
 
 
